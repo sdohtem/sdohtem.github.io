@@ -1,0 +1,66 @@
+---
+
+slideshow:
+  -
+    image: stjames.jpg
+    caption: >
+      **St James the Great Church**<br>
+      MacTier, Ontario
+  -
+    image: stannes.jpg
+    caption: >
+      **St Anne&apos;s Mission Church**<br>
+      Bala, Ontario
+
+welcome:
+  title: >
+    Join us for Catholic Mass in Beautiful Muskoka
+  message: |
+    **St James the Great** in MacTier,
+    together with our sister church
+    **St&nbsp;Anne&apos;s&nbsp;Mission** in Bala,
+    form a welcoming Roman&nbsp;Catholic parish dedicated to the
+    spiritual, emotional, and physical needs of its
+    members&nbsp;and&nbsp;community.
+
+    Through worship, education, and service, this faith-filled community,
+    under the inspiration and guidance of the *Holy&nbsp;Spirit*,
+    strives to be nourished as a joyful family gathered around
+    the&nbsp;Eucharist. **Everyone&nbsp;is&nbsp;welcome.**
+
+navbar:
+  internal:
+    -
+      title: Latest Bulletin
+      mnemonic: bulletin
+      link: /bulletin.pdf
+    -
+      title: St&nbsp;James&nbsp;the&nbsp;Great <span>Map</span>
+      mnemonic: stjames
+      link: https://goo.gl/maps/UH2kHye9WgG2
+    -
+      title: St&nbsp;Anne&apos;s&nbsp;Mission <span>Map</span>
+      mnemonic: stannes
+      link: https://goo.gl/maps/ARRuSdhUYqu
+  external:
+    -
+      title: Donate at Canada&nbsp;Helps
+      link: javascript:void()
+    -
+      title: Peterborough Diocese
+      link: https://www.peterboroughdiocese.org/en/index.aspx
+    -
+      title: Peterborough Vocations
+      link: https://www.ptbovocations.ca/en/index.aspx
+    -
+      title: From the Vineyard
+      link: https://www.peterboroughdiocese.org/en/about-us/from-the-vineyard.aspx
+    -
+      title: The Catholic Herald
+      link: https://www.peterboroughdiocese.org/en/about-us/magazine.aspx
+    -
+      title: Canadian Conference of Catholic Bishops
+      link: http://www.cccb.ca/site/
+    -
+      title: The Vatican
+      link: http://w2.vatican.va/content/vatican/en.html

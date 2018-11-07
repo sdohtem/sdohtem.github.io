@@ -1,0 +1,115 @@
+---
+
+-
+  - section: Saint James the Great Parish
+    subsections:
+      - subsection: Leadership
+        items:
+          - item: Fr Collins Okafor
+            text: Pastor
+          - item: Phone
+            text: 705-746-5181
+          - item: Mobile
+            text: 905-926-4817
+      - subsection: Office
+        items:
+          - item: Office Administrator
+            text: Kathleen Butt
+          - item: Phone
+            text: 705-375-2478
+          - item: Fax
+            text: 705-375-1868
+          - item: E-mail
+            mail: office@stjamesmactier.ca
+          - item: Hours
+            text: |
+              Wednesday and Friday<br>
+              9:30 AM to 1:30 PM
+          - item: Mailing address
+            text: |
+              82 Joseph St, Box 32<br>
+              MacTier, ON<br>
+              P0C 1H0
+      - subsection: St James the Great Church
+        items:
+          - item: Physical address
+            text: |
+              509 High Street<br>
+              MacTier, Ontario<br>
+          - item: Map
+            link: https://goo.gl/maps/UH2kHye9WgG2
+      - subsection: Saint Anne's Mission Church
+        items:
+          - item: Phyical address
+            text: |
+              1150 Whiteside Rd<br>
+              Bala, Ontario
+          - item: Map
+            link: https://goo.gl/maps/ARRuSdhUYqu
+
+-
+  - section: Volunteers
+    subsections:
+      - subsection: Sacristan
+        items:
+          - item: Nan Allen
+            text: 705-762-5904
+      - subsection: CWL
+        items:
+          - item: Brenda Baker
+            text: 705-375-5049
+      - subsection: Parish Music
+        items:
+          - item: Ray Bonnah
+            text: 705-762-4047
+          - item: Paula Mullen
+            text: 705-773-9816
+      - subsection: Religious Articles
+        items:
+          - item: Andree Blais
+            text: 705-375-2138
+      - subsection: Decorations
+        items:
+          - item: Christine Spykerman
+            text: 705-375-5311
+          - item: Doreen Lance
+            text: 705-375-5043
+      - subsection: Finance/Property
+        items:
+          - item: Alston Perianayagam
+            text: 647-205-7976
+          - item: Arnold Nussey
+            text: 705-375-2453
+          - item: Christine Spykerman
+            text: 705-375-5311
+          - item: René Leenaars
+            text: 705-765-5888
+          - item: Brian McElwain
+            text: 416-816-2141
+
+-
+  - section: Peterborough Diocese
+    subsections:
+      - subsection: Leadership
+        items:
+          - item: Most Rev Daniel Miehm
+            text: Bishop
+          - item: Fr Joseph J. Moran
+            text: Vicar General
+      - subsection: Office
+        items:
+          - item: Address
+            text: |
+              Peterborough Diocese<br>
+              Chancery Office<br>
+              350 Hunter St W, PO Box 175<br>
+              Peterborough, ON<br>
+              K9J 6Y8
+          - item: Phone
+            text: 705-745-5123
+          - item: Fax
+            text: 705-745-2555
+          - item: Web
+            link: https://www.peterboroughdiocese.org
+          - item: E-mail
+            mail: chancery@peterboroughdiocese.org

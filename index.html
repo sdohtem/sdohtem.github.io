@@ -1,0 +1,63 @@
+---
+mnemonic: index
+layout: main
+display_title: St James the Great Church - Home
+open_graph_title: >
+  Home of
+  St James the Great and
+  St Anne's Mission Churches
+  in MacTier and Bala, Ontario
+open_graph_description: >
+  A Roman Catholic parish in the heart of beautiful Muskoka, Ontario.
+---
+
+<!-- SCHEDULE -->
+
+{% assign schedule = site.data.schedule %}
+
+<section id="index-schedule">
+  <h1 id="index-schedule-title">{{ schedule.title }}</h1>
+  {% for occasion in schedule.occasions %}
+  {% if occasion.homepage %}<div class="index-schedule-occasion">{{ occasion.title }}</div>{% endif %}
+  {% for event in occasion.events %}
+  <div class="index-schedule-event">
+    <span class="index-schedule-title">
+      {{ event.title }}
+      <span class="index-schedule-subtitle">{{ event.subtitle }}</span>
+    </span>
+    {% for day in event.days %}
+    <span class="index-schedule-days-times">
+      <span class="index-schedule-day">{{ day.day | replace: '--', '&ndash;' }}</span>
+      {% for time in day.times %}
+      <span class="index-schedule-time">{{ time | replace: '--', '&ndash;' }}</span>
+      {% endfor %}
+    </span>
+    {% endfor %}
+  </div>
+  {% endfor %}
+  {% endfor %}
+</section>
+
+<!-- EXPOSITION -->
+
+{% assign exposition = site.data.index.exposition %}
+
+<section id="exposition">
+  <h1 id="exposition-title">{{ exposition.title }}</h1>
+  <div class="pure-g">
+    {% for item in exposition.items %}
+    {% assign combined_style = '' %}
+    {% if item.color %}{% capture color_style %}color:{{item.color}}{% endcapture %}{% assign combined_style = combined_style | append: color_style %}{% endif %}
+    {% if item.background %}{% capture background_style %};background-color:{{item.background}}{% endcapture %}{% assign combined_style = combined_style | append: background_style %}{% endif %}
+    {% if item.shadow %}{% capture shadow_style %};box-shadow:-2px 2px 5px {{item.shadow}}{% endcapture %}{% assign combined_style = combined_style | append: shadow_style %}{% endif %}
+    <div class="exposition-item pure-u-1 pure-u-md-1-3"><section>
+      {% if item.patch %}
+      <div class="exposition-item-patch" style="{{ combined_style }}"><div class="exposition-item-patch-blurb">{{ item.patch | markdownify }}</div></div>
+      {% else %}
+      <div class="exposition-item-title">{{ item.title }}</div>
+      {% endif %}
+      <div class="exposition-item-text markdown">{{ item.text | markdownify }}</div>
+    </section></div>
+    {% endfor %}
+  </div>
+</section>

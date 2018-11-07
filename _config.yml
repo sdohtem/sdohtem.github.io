@@ -1,0 +1,61 @@
+# Site
+
+# Locations
+
+#source
+#destination
+#collections_dir
+#plugins_dir
+#layouts_dir
+#data_dir
+#includes_dir
+
+styles_path:           /styles/
+scripts_path:          /scripts/
+images_path:           /images/
+slideshow_images_path: /images/slideshow/
+
+
+
+# Build
+
+# url: https://stpeterspeterborough.ca
+#baseurl:
+
+timezone: America/Toronto
+exclude: [temp"]
+#include
+#keep_files
+#encoding
+#safe
+
+future: true
+#show_drafts
+#unpublished
+#limit_posts
+strict_front_matter: true
+
+#permalink
+#paginate_path
+
+#excerpt_separator
+#markdown
+#highlighter
+#whitelist
+#plugins
+
+#lsi
+#incremental
+#profile
+
+#quiet
+#verbose
+
+
+
+# Server
+
+#port
+#host
+#detach
+#show_dir_listing

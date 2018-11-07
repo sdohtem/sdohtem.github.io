@@ -1,0 +1,36 @@
+---
+
+title: Schedule
+
+occasions:
+  -
+    title: Regular Schedule
+    events:
+      -
+        title: St James the Great
+        subtitle: MacTier
+        days:
+          -
+            day: Sunday Morning
+            times:
+              - 11:00 AM
+          -
+            day: Wednesday and Friday
+            times:
+              - 9:00 AM
+      -
+        title: St Anne&apos;s Mission
+        subtitle: Bala
+        days:
+          -
+            day: Saturday Evening
+            times:
+              - 5:00 PM
+      -
+        title: St Peter the Apostle
+        subtitle: Parry Sound
+        days:
+          -
+            day: Monday and Tuesday
+            times:
+              - 10:30 AM

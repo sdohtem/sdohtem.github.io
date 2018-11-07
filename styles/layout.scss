@@ -1,0 +1,384 @@
+---
+---
+
+/***
+ ***   Derek Coulter <sdohtem [at] gmail.com>
+ ***   November 2019
+ ***/
+
+
+
+/*** COMMON ***/
+
+
+/* MEDIA QUERY BREAKPOINTS */
+
+/* Pure.css DEFAULTS */
+/*@media screen and (min-width: 35.5rem) {}*/
+/*@media screen and (min-width: 48rem) {}*/
+/*@media screen and (min-width: 64rem) {}*/
+/*@media screen and (min-width: 80rem) {}*/
+
+
+/* BASE STYLES */
+
+html, button, input, select, textarea, .pure-g [class *= "pure-u"] { font-family: 'Open Sans', sans-serif; }
+
+section.page-container { margin: 0 5%; }
+
+h1.page-title {
+  margin: 0;
+  font-weight: 300; font-size: 1.5rem; letter-spacing: -0.05rem;
+  color: black; text-shadow: -1px 1px 2px #ccc;
+}
+
+div.page-descriptive {
+  margin: 1rem 0 2rem 0;
+  color: #666;
+}
+
+div.page-descriptive a { font-weight: 400; color: #333; }
+
+div.markdown > h1 {
+  margin: 1rem 0 0 0;
+  font-weight: 600; font-size: 0.9rem; color: #666;
+}
+
+div.markdown > h2 {
+  margin: 0.5rem 0 0 0;
+  font-weight: 600; font-size: 0.9rem; color: #999;
+}
+
+div.markdown > p {
+  margin: 0.25rem 0 0 0;
+  font-weight: 300; font-size: 0.9rem;
+}
+
+div.markdown a { font-weight: 400; text-decoration: none; color: #333; }
+div.markdown a:hover { color: skyblue; }
+div.markdown em { font-style: italic; }
+div.markdown strong { font-weight: 600; }
+
+div.markdown > table {
+  margin-top: 0.5rem;
+  border-collapse: collapse;
+}
+
+div.markdown th, div.markdown td {
+  padding: 0 0 0.1rem 0.5rem;
+  text-align: left; vertical-align: top;
+  font-size: 0.9rem;
+}
+
+div.markdown th { font-weight: 400; text-decoration: underline; }
+div.markdown td { font-weight: 300; }
+
+@media screen and (min-width: 48rem) {
+  h1.page-title { font-size: 1.75rem; }
+  div.page-descriptive > p { font-size: 1rem; }
+}
+
+
+
+/*** LAYOUT: MAIN ***/
+
+
+{% if jekyll.environment == "development" %}
+
+/* TEMPORARY DEVICE WIDTH INDICATOR */
+
+#width-indicator {
+  position: fixed; width: 30px; height: 10px; top: 0; right: 0;
+  background-color: yellow;
+}
+
+@media screen and (min-width: 35.5rem) { #width-indicator { background-color: red; } }
+@media screen and (min-width: 48rem) { #width-indicator { background-color: green; } }
+@media screen and (min-width: 64rem) { #width-indicator { background-color: blue; } }
+@media screen and (min-width: 80rem) { #width-indicator { background-color: magenta; } }
+
+{% endif %}
+
+
+/* SECTION: BANNER */
+
+#banner {
+  width: 100%;
+  padding: 0.25rem 0;
+  text-align: center;
+  // background-image: linear-gradient(#fff, #ddd);
+  // background-image: linear-gradient(-45deg, #560, #670);
+  // background-color: #560;
+  text-shadow: 0 0 6px white; color: black;
+}
+
+div.banner-church {}
+#banner > div:nth-of-type(3) { position: relative; top: -1rem; }
+
+span.banner-church-name {
+  font-weight: 400; font-size: 2rem; letter-spacing: -0.1rem;
+}
+
+span.banner-church-appellation {
+  margin-left: 0.25rem;
+  font-weight: 300; font-size: 1.5rem; letter-spacing: -0.1rem;
+}
+
+div.banner-and {
+  position: relative; top: -0.25rem;
+  font-weight: 600; font-size: 0.5rem;
+}
+
+div.banner-rcc {
+  position: relative; top: -1rem;
+  font-weight: 300; font-size: 1rem;
+}
+
+@media screen and (min-width: 35.5rem) {
+  #banner { padding: 0.5rem 0; }
+  span.banner-church-name { font-size: 2.5rem; }
+  span.banner-church-appellation { font-size: 2rem; }
+  div.banner-and { font-size: 0.65rem; }
+  div.banner-rcc { font-size: 1rem; }
+}
+
+
+/* SECTION: SLIDESHOW */
+
+#slideshow { position: relative; cursor: default; }
+
+#slideshow-container { background-color: white; }
+
+div.slideshow-slide { display: none; }
+
+div.slideshow-slide > img { width: 100%; }
+
+div.slideshow-slide > div {
+  box-sizing: border-box;
+  position: absolute; bottom: 20%; left: 5%;
+  border-radius: 5px;
+  padding: 0.25rem 1rem;
+  background-color: rgba(0,0,0,0.2);
+  text-overflow: clip;
+  text-shadow: 0 0 6px black; color: white;
+  font-weight: 300;
+}
+
+div.slideshow-slide > div > p { margin-top: 0; font-size: 1rem; }
+div.slideshow-slide > div a { color: #ccc; }
+div.slideshow-slide > div a:hover { color: white; }
+div.slideshow-slide > div strong { font-weight: 300; color: #ff6; }
+
+#slideshow-previous, #slideshow-next {
+  box-sizing: border-box;
+  position: absolute; top: 50%;
+  margin-top: -2.5rem; padding: 0.5rem 1rem 1rem 1rem;
+  transition: 0.25s ease;
+  font-weight: 400; font-size: 2rem;
+  color: rgba(255,255,255,0.5);
+}
+
+#slideshow-previous { border-radius: 0 3px 3px 0; border-left: none; }
+#slideshow-next { right: 0; border-right: none; border-radius: 3px 0 0 3px; }
+
+#slideshow-previous:hover, #slideshow-next:hover {
+  background-color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.75);
+}
+
+#slideshow-indicators { margin-top: 0.35rem; text-align: center; }
+
+span.slideshow-indicator {
+  display: inline-block;
+  width: 0.75rem; height: 0.75rem;
+  border-radius: 50%;
+  margin: 0 2px;
+  background-color: #ccc;
+  transition: background-color 0.25s ease;
+}
+
+#slideshow-pause {
+  display: inline-block;
+  width: 0.75rem; height: 0.75rem;
+  margin-left: 8px;
+  transition: background-color 0.25s ease;
+}
+
+span.slideshow-indicator:hover, #slideshow-pause:hover { background-color: black; }
+span.slideshow-indicator-active { background-color: #666; }
+span.slideshow-pause-inactive { background-color: #ccc; }
+span.slideshow-pause-active { background-color: #666; }
+
+@media screen and (min-width: 35.5rem) {
+  div.slideshow-slide > div { bottom: 15%; }
+  div.slideshow-slide > div > p { font-size: 1.5rem; }
+}
+
+
+/* SECTION: WELCOME */
+
+#welcome {
+  padding: 1rem 0;
+  text-align: center;
+  // background-color: #c33;
+}
+
+#welcome-message { margin: 0.5rem 5% 0 5%; }
+#welcome-message > p { font-size: 1rem; }
+#welcome-message em { font-style: normal; color: red; }
+#welcome-message strong { font-weight: 400; }
+
+@media screen and (min-width: 48rem) { #welcome-message { margin: 0.5rem 10%; } }
+@media screen and (min-width: 64rem) { #welcome-message { margin: 0.5rem 15%; } }
+@media screen and (min-width: 80rem) { #welcome-message { margin: 0.5rem 20%; } }
+
+
+/* SECTION: NAVIGATION & CONTENT */
+
+#main { margin-top: 1rem; }
+#main > div.pure-g > div { box-sizing: border-box; }
+
+#content { padding: 0 2%; }
+
+#navbar { margin-bottom: 2rem; }
+
+#navbar-internal {
+  padding: 1rem 5% 0.5rem 5%;
+  text-align: center;
+}
+
+#navbar-internal > a {
+  padding-right: 0.5rem;
+  font-weight: 400; font-size: 0.9rem;
+  text-decoration: none;
+  color: black;
+  cursor: default;
+}
+
+#navbar-internal > a:first-of-type { color: #060; }
+#navbar-internal > a:last-of-type { padding-right: 0; }
+#navbar-internal > a:hover { color: skyblue; }
+
+#navbar-internal > a.navbar-internal-current { color: #333; }
+
+#navbar-internal > a > span { display: none; }
+
+#navbar-external {
+  padding: 0.5rem 5% 0 5%;
+  border-top: 2px solid #eee;
+  text-align: center; line-height: 1.5rem;
+}
+
+#navbar-external > a {
+  padding-right: 1rem;
+  font-weight: 300; font-size: 0.9rem;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: default;
+  color: #333;
+}
+
+#navbar-external > a:last-of-type { padding-right: 0; }
+#navbar-external > a:hover { color: skyblue; }
+
+@media screen and (min-width: 48rem) {
+  #main { margin-top: 2rem; }
+
+  #content { border-left: 2px solid #eee; }
+
+  #navbar-internal {
+    padding: 0 10%;
+    text-align: right;
+  }
+
+  #navbar-internal > a {
+    display: block;
+    padding: 0 0 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  #navbar-internal > a:last-of-type { padding-bottom: 0; }
+
+  #navbar-internal > a > span { display: block; }
+
+  #navbar-external {
+    margin-top: 0.5rem; padding: 0.5rem 10% 0 10%;
+    text-align: right; line-height: normal;
+  }
+
+  #navbar-external > a {
+    display: block;
+    padding: 0 0 0.75rem 0;
+    font-size: 1rem;
+    white-space: normal;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  #navbar-internal > a { font-size: 1.1rem; }
+  #navbar-external > a { font-size: 1.1rem; }
+}
+
+
+/* SECTION: CONTACT */
+
+#contact {
+  box-sizing: border-box;
+  margin-top: 3rem; padding: 1rem 5% 2rem 5%;
+  border-top: 1px solid black;
+  background-color: #013;
+  background-image: linear-gradient(-15deg, #069, #013);
+  color: white;
+}
+
+.contact-container > h1 {
+  margin: 1rem 5% 0.5rem 0;
+  font-weight: 400; font-size: 0.9rem;
+}
+
+.contact-container > dl { margin: 0; }
+
+.contact-container > dl > h1 {
+  margin: 0.5rem 0 0 1rem;
+  font-weight: 400; font-size: 0.75rem;
+}
+
+.contact-container > dl > dt {
+  margin: 0 0 0 2rem;
+  font-weight: 400; font-size: 0.75rem;
+}
+
+.contact-container > dl > dd {
+  margin: 0 5% 0 3rem;
+  font-weight: 300; font-size: 0.75rem;
+  overflow: hidden; text-overflow: ellipsis;
+}
+
+.contact-container > dl > dd > a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact-container > dl > dd > a:hover { color: rgba(255,255,255,0.5); }
+
+
+/* SECTION: COLOPHON */
+
+#colophon {
+  padding: 0.5rem 5%;
+  background-color: black;
+  font-weight: 300;
+  color: #999;
+  text-align: center;
+}
+
+#colophon > p { margin: 0; }
+#colophon-copyright { font-size: 0.5rem; }
+#colophon-license { font-size: 0.5rem; }
+#colophon-license > a { text-decoration: none; color: #ccc; }
+#colophon-license > a:hover { color: white; }
+#colophon-attribution { font-size: 0.5rem; }
+#colophon-attribution-cross { color: white; }
+#colophon-attribution-heart { color: red; }
+#colophon-attribution > a { font-weight: 400; text-decoration: none; color: #ccc; }
+#colophon-attribution > a:hover { color: white;}
