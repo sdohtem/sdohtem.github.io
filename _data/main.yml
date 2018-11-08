@@ -42,10 +42,10 @@ navbar:
       title: St&nbsp;Anne&apos;s&nbsp;Mission <span>Map</span>
       mnemonic: stannes
       link: https://goo.gl/maps/ARRuSdhUYqu
-  external:
     -
-      title: Donate at Canada&nbsp;Helps
-      link: javascript:void()
+      title: Donate&nbsp;at Canada&nbsp;Helps
+      link: https://www.canadahelps.org/en/charities/848623575RR0022-saint-james-the-great/
+  external:
     -
       title: Peterborough Diocese
       link: https://www.peterboroughdiocese.org/en/index.aspx

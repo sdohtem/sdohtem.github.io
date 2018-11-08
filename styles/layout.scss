@@ -250,8 +250,8 @@ span.slideshow-pause-active { background-color: #666; }
 #navbar-internal > a {
   padding-right: 0.5rem;
   font-weight: 400; font-size: 0.9rem;
-  text-decoration: none;
-  color: black;
+  text-decoration: none; white-space: nowrap;
+  color: #333;
   cursor: default;
 }
 
@@ -275,7 +275,7 @@ span.slideshow-pause-active { background-color: #666; }
   white-space: nowrap;
   text-decoration: none;
   cursor: default;
-  color: #333;
+  color: #666;
 }
 
 #navbar-external > a:last-of-type { padding-right: 0; }
@@ -295,6 +295,7 @@ span.slideshow-pause-active { background-color: #666; }
     display: block;
     padding: 0 0 0.5rem 0;
     font-size: 1rem;
+    white-space: normal;
   }
 
   #navbar-internal > a:last-of-type { padding-bottom: 0; }
