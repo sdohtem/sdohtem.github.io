@@ -110,8 +110,9 @@ div.markdown td { font-weight: 300; }
 
 div.banner-rcc { font-weight: 400; font-size: 0.85rem; }
 
-div.banner-church { position: relative; top: -0.25rem; }
-#banner > div:nth-of-type(4) { position: relative; top: -1rem; }
+div.banner-church { position: relative; }
+#banner > div:nth-of-type(2) { top: -0.25rem; }
+#banner > div:nth-of-type(4) { top: -1rem; }
 
 span.banner-church-name {
   font-weight: 600; font-size: 1.5rem; letter-spacing: -0.1rem;
@@ -135,10 +136,12 @@ div.banner-muskoka {
 @media screen and (min-width: 35.5rem) {
   #banner { padding-left: 3.5rem; }
   div.banner-rcc { font-size: 1rem; }
-  span.banner-church-name { font-size: 3rem; }
+  #banner > div:nth-of-type(2) { top: -0.75rem; }
+  #banner > div:nth-of-type(4) { top: -1.5rem; }
+  span.banner-church-name { ; font-size: 3rem; }
   span.banner-church-appellation { font-size: 1.5rem; }
-  div.banner-and { left: 5.5rem; font-size: 0.75rem; }
-  div.banner-muskoka { font-size: 1rem; }
+  div.banner-and { top: -1rem; left: 5.5rem; font-size: 0.75rem; }
+  div.banner-muskoka { top: -1.75rem; font-size: 1rem; }
 }
 
 
