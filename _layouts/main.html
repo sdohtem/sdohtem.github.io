@@ -41,16 +41,17 @@
 <!-- BANNER -->
 
 <header id="banner">
+  <div class="banner-rcc">The Roman Catholic Churches of</div>
   <div class="banner-church">
     <span class="banner-church-name">St James</span>
-    <span class="banner-church-appellation">the Great Church</span>
+    <span class="banner-church-appellation">the Great</span>
   </div>
   <div class="banner-and">and</div>
   <div class="banner-church">
     <span class="banner-church-name">St Anne&apos;s</span>
-    <span class="banner-church-appellation">Mission Church</span>
+    <span class="banner-church-appellation">Mission</span>
   </div>
-  <div class="banner-rcc">Roman Catholic Churches in beautiful Muskoka, Ontario</div>
+  <div class="banner-muskoka">in beautiful Muskoka, Ontario</div>
   <!-- <div class="banner-location">in MacTier and Bala, Ontario</div> -->
 </header>
 
@@ -67,8 +68,6 @@
       <div class="markdown">{{ slide.caption | markdownify }}</div>
     </div>
     {% endfor %}
-    <a id="slideshow-previous" onclick="slideshow.previous()">&#x00AB;</a>
-    <a id="slideshow-next" onclick="slideshow.next()">&#x00BB;</a>
   </div>
   <div id="slideshow-indicators">
     {% for slide in slideshow %}
