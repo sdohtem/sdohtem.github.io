@@ -35,6 +35,11 @@ navbar:
       mnemonic: bulletin
       link: /bulletin.pdf
     -
+      title: Contact us
+      mnemonic: contacts
+      link: >
+        #contact
+    -
       title: St&nbsp;James&nbsp;the&nbsp;Great <span>Map</span>
       mnemonic: stjames
       link: https://goo.gl/maps/UH2kHye9WgG2

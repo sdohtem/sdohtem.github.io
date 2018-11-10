@@ -1,7 +1,7 @@
 ---
 
 -
-  - section: Saint James the Great Parish
+  - section: Ministry Leaders
     subsections:
       - subsection: Leadership
         items:
@@ -11,6 +11,8 @@
             text: 705-746-5181
           - item: Mobile
             text: 905-926-4817
+          - item: E-mail
+            mail: frcollinsokafor@peterboroughdiocese.org
       - subsection: Office
         items:
           - item: Office Administrator
@@ -48,7 +50,7 @@
             link: https://goo.gl/maps/ARRuSdhUYqu
 
 -
-  - section: Volunteers
+  - section: Committees
     subsections:
       - subsection: Sacristan
         items:
