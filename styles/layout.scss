@@ -138,66 +138,27 @@ div.banner-muskoka {
   div.banner-rcc { font-size: 1rem; }
   #banner > div:nth-of-type(2) { top: -0.75rem; }
   #banner > div:nth-of-type(4) { top: -1.5rem; }
-  span.banner-church-name { ; font-size: 3rem; }
+  span.banner-church-name { font-size: 3rem; }
   span.banner-church-appellation { font-size: 1.5rem; }
   div.banner-and { top: -1rem; left: 5.5rem; font-size: 0.75rem; }
   div.banner-muskoka { top: -1.75rem; font-size: 1rem; }
 }
 
 
-/* SECTION: SLIDESHOW */
+/* SECTION: HERO */
 
-#slideshow { position: relative; cursor: default; }
-
-#slideshow-container { background-color: white; }
-
-div.slideshow-slide { display: none; }
-
-div.slideshow-slide > img { width: 100%; }
-
-div.slideshow-slide > div {
-  box-sizing: border-box;
-  position: absolute; bottom: 20%; right: 10%;
-  border-radius: 5px;
-  padding: 0.25rem 1rem;
-  background-color: rgba(0,0,0,0.5);
-  text-overflow: clip;
-  text-shadow: 0 0 6px black; color: white;
-  font-weight: 300; text-align: right;
+#hero {
+  position: relative;
+  cursor: default;
 }
 
-div.slideshow-slide > div > p { margin-top: 0; font-size: 0.85rem; }
-div.slideshow-slide > div a { color: #ccc; }
-div.slideshow-slide > div a:hover { color: white; }
-div.slideshow-slide > div strong { font-weight: 300; color: #ff6; }
-
-#slideshow-indicators { margin-top: 0.35rem; text-align: center; }
-
-span.slideshow-indicator {
-  display: inline-block;
-  width: 0.75rem; height: 0.75rem;
-  border-radius: 50%;
-  margin: 0 2px;
-  background-color: #ccc;
-  transition: background-color 0.25s ease;
+#hero > img {
+  width: 100%;
+  background-color: white;
 }
 
-#slideshow-pause {
-  display: inline-block;
-  width: 0.75rem; height: 0.75rem;
-  margin-left: 8px;
-  transition: background-color 0.25s ease;
-}
 
-span.slideshow-indicator:hover, #slideshow-pause:hover { background-color: black; }
-span.slideshow-indicator-active { background-color: #666; }
-span.slideshow-pause-inactive { background-color: #ccc; }
-span.slideshow-pause-active { background-color: #666; }
 
-@media screen and (min-width: 35.5rem) {
-  div.slideshow-slide > div { bottom: 15%; }
-  div.slideshow-slide > div > p { font-size: 1rem; }
-}
 
 
 /* SECTION: WELCOME */

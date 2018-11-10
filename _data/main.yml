@@ -1,16 +1,6 @@
 ---
 
-slideshow:
-  -
-    image: stjames.jpg
-    caption: >
-      **St James the Great Church**<br>
-      MacTier, Ontario
-  -
-    image: stannes.jpg
-    caption: >
-      **St Anne&apos;s Mission Church**<br>
-      Bala, Ontario
+hero: hero.jpg
 
 welcome:
   title: >

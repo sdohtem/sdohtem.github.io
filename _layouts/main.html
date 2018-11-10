@@ -55,27 +55,12 @@
   <!-- <div class="banner-location">in MacTier and Bala, Ontario</div> -->
 </header>
 
-<!-- SLIDESHOW -->
+<!-- HERO -->
 
 {% if page.mnemonic == 'index' %}
-{% assign slideshow = site.data.main.slideshow %}
 
-<div id="slideshow">
-  <div id="slideshow-container">
-    {% for slide in slideshow %}
-    <div class="slideshow-slide">
-      <img src="{{ slide.image | prepend: site.slideshow_images_path | relative_url }}">
-      <div class="markdown">{{ slide.caption | markdownify }}</div>
-    </div>
-    {% endfor %}
-  </div>
-  <div id="slideshow-indicators">
-    {% for slide in slideshow %}
-    {% assign count = 0 %}
-    <span class="slideshow-indicator" onclick="slideshow.set({% increment slide_index %})"></span>
-    {% endfor %}
-    <span id="slideshow-pause" class="slideshow-pause-inactive" onclick="slideshow.pause()"></span>
-  </div>
+<div id="hero">
+  <img src="{{ site.data.main.hero | prepend: site.images_path | relative_url }}">
 </div>
 
 {% endif %}
