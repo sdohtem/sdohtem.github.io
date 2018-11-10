@@ -43,9 +43,8 @@ open_graph_description: >
 {% assign exposition = site.data.index.exposition %}
 
 <section id="exposition">
-  <h1 id="exposition-title">{{ exposition.title }}</h1>
   <div class="pure-g">
-    {% for item in exposition.items %}
+    {% for item in exposition %}
     {% assign combined_style = '' %}
     {% if item.color %}{% capture color_style %}color:{{item.color}}{% endcapture %}{% assign combined_style = combined_style | append: color_style %}{% endif %}
     {% if item.background %}{% capture background_style %};background-color:{{item.background}}{% endcapture %}{% assign combined_style = combined_style | append: background_style %}{% endif %}

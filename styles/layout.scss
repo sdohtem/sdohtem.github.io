@@ -100,83 +100,77 @@ div.markdown td { font-weight: 300; }
 {% endif %}
 
 
+/* SECTION: HERO */
+
+#hero { display: block; width: 100%; cursor: default; }
+
+
 /* SECTION: BANNER */
 
 #banner {
-  position: absolute; z-index: 1;
-  padding: 2rem 0 0 2rem;
-  color: white; text-shadow: -2px 2px 2px black;
+  position: relative;
+  border-bottom: 2px solid #eee;
+  padding: 1rem 0;
+  text-align: center;
+  color: #333;
 }
 
-div.banner-rcc { font-weight: 400; font-size: 0.85rem; }
+div.banner-rcc { font-weight: 400; font-size: 0.75rem; color: #666; }
 
-div.banner-church { position: relative; }
-#banner > div:nth-of-type(2) { top: -0.25rem; }
-#banner > div:nth-of-type(4) { top: -1rem; }
+div.banner-church { position: relative; top: -0.25rem; }
 
 span.banner-church-name {
   font-weight: 600; font-size: 1.5rem; letter-spacing: -0.1rem;
+  text-shadow: -2px 2px 2px #ccc;
 }
 
 span.banner-church-appellation {
-  margin-left: 0.25rem;
-  font-weight: 400; font-size: 1rem; letter-spacing: -0.1rem;
+  font-weight: 400; font-size: 1.25rem; letter-spacing: -0.1rem;
+  color: #666; text-shadow: -2px 2px 2px #ccc;
 }
 
-div.banner-and {
-  position: relative; top: -0.5rem; left: 2.75rem;
-  font-weight: 400; font-size: 0.75rem;
+span.banner-and {
+  position: relative; top: -0.05rem;
+  padding: 0 0.2rem;
+  font-weight: 400; font-size: 0.65rem; letter-spacing: -0.05rem;
+  color: #999;
 }
 
 div.banner-muskoka {
-  position: relative; top: -1rem;
-  font-weight: 400; font-size: 0.85rem;
+  position: relative; top: -0.25rem;
+  font-weight: 400; font-size: 0.75rem;
+  color: #666;
 }
 
 @media screen and (min-width: 35.5rem) {
-  #banner { padding-left: 3.5rem; }
-  div.banner-rcc { font-size: 1rem; }
-  #banner > div:nth-of-type(2) { top: -0.75rem; }
-  #banner > div:nth-of-type(4) { top: -1.5rem; }
-  span.banner-church-name { font-size: 3rem; }
-  span.banner-church-appellation { font-size: 1.5rem; }
-  div.banner-and { top: -1rem; left: 5.5rem; font-size: 0.75rem; }
-  div.banner-muskoka { top: -1.75rem; font-size: 1rem; }
+  div.banner-rcc { font-size: 1rem; letter-spacing: -0.05rem; }
+  span.banner-church-name { font-size: 2rem; letter-spacing: -0.15rem; }
+  span.banner-church-appellation { font-size: 1.75rem; letter-spacing: -0.15rem; }
+  span.banner-and { font-size: 0.75rem; letter-spacing: -0.1rem; }
+  div.banner-muskoka { font-size: 1rem; letter-spacing: -0.05rem; }
 }
-
-
-/* SECTION: HERO */
-
-#hero {
-  position: relative;
-  cursor: default;
-}
-
-#hero > img {
-  width: 100%;
-  background-color: white;
-}
-
-
-
 
 
 /* SECTION: WELCOME */
 
-#welcome {
-  padding: 1rem 0;
+#welcome { margin: 1rem 5%; }
+
+#welcome-title {
+  margin: 0;
+  font-weight: 600; font-size: 1rem;
   text-align: center;
-  // background-color: #c33;
+  color: #333;
 }
 
-#welcome-message { margin: 0.5rem 5% 0 5%; }
-#welcome-message > p { font-size: 1rem; }
+#welcome-message { margin-top: 0.5rem; }
+#welcome-message > p { margin-top: 0.75rem; font-size: 1rem; }
 #welcome-message em { font-style: normal; color: red; }
 #welcome-message strong { font-weight: 400; }
 
-@media screen and (min-width: 48rem) { #welcome-message { margin: 0.5rem 10%; } }
-@media screen and (min-width: 64rem) { #welcome-message { margin: 0.5rem 15%; } }
-@media screen and (min-width: 80rem) { #welcome-message { margin: 0.5rem 20%; } }
+@media screen and (min-width: 48rem) {
+  #welcome { margin: 1rem 10%; }
+  #welcome-title { font-size: 1.25rem; }
+}
 
 
 /* SECTION: NAVIGATION & CONTENT */

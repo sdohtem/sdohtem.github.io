@@ -38,6 +38,14 @@
 <div id="width-indicator"></div>
 {% endif %}
 
+<!-- HERO -->
+
+{% if page.mnemonic == 'index' %}
+
+<img id="hero" src="{{ site.data.main.hero | prepend: site.images_path | relative_url }}">
+
+{% endif %}
+
 <!-- BANNER -->
 
 <header id="banner">
@@ -45,25 +53,12 @@
   <div class="banner-church">
     <span class="banner-church-name">St James</span>
     <span class="banner-church-appellation">the Great</span>
-  </div>
-  <div class="banner-and">and</div>
-  <div class="banner-church">
+    <span class="banner-and">and</span>
     <span class="banner-church-name">St Anne&apos;s</span>
     <span class="banner-church-appellation">Mission</span>
   </div>
   <div class="banner-muskoka">in beautiful Muskoka, Ontario</div>
-  <!-- <div class="banner-location">in MacTier and Bala, Ontario</div> -->
 </header>
-
-<!-- HERO -->
-
-{% if page.mnemonic == 'index' %}
-
-<div id="hero">
-  <img src="{{ site.data.main.hero | prepend: site.images_path | relative_url }}">
-</div>
-
-{% endif %}
 
 <!-- WELCOME -->
 
@@ -71,7 +66,7 @@
 {% assign welcome = site.data.main.welcome %}
 
 <section id="welcome">
-  <!-- <h1 id="welcome-title">{{ welcome.title }}</h1> -->
+  <h1 id="welcome-title">{{ welcome.title | markdownify }}</h1>
   <div id="welcome-message" class="markdown">{{ welcome.message | markdownify }}</div>
 </section>
 

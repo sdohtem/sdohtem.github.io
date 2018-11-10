@@ -14,7 +14,6 @@
 
 #index-schedule-title {
   margin: 0 5%; padding-bottom: 0.25rem;
-  border-bottom: 2px solid #eee;
   font-weight: 400; font-size: 0.9rem;
   color: #333;
 }
@@ -78,13 +77,6 @@ span.index-schedule-time {
 
 #exposition { margin: 3rem 10% 0 10%; }
 
-#exposition-title {
-  margin: 0 auto 2rem auto;
-  font-weight: 600; font-size: 1.1rem;
-  text-align: center;
-  color: #333;
-}
-
 div.exposition-item { margin-bottom: 3rem; }
 
 div.exposition-item-patch {
@@ -117,7 +109,6 @@ div.exposition-item-text em { font-style: normal; color: #c33; }
 }
 
 @media screen and (min-width: 64rem) {
-  #exposition-title { font-size: 1.2rem; }
   div.exposition-item-patch { width: 8rem; height: 8rem; line-height: 8rem; }
   div.exposition-item-patch-blurb p { font-size: 1rem; line-height: 1.1rem; }
   div.exposition-item-patch-blurb em { font-size: 1.1rem; }

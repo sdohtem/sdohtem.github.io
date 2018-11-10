@@ -1,61 +1,57 @@
 ---
 
 exposition:
-  title: >
-    Join us for a contemporary Catholic mass in a
-    welcoming church&nbsp;community
-  items:
 
-    -
-      color: white
-      background: red
-      patch: |
-        **Welcome**
-      text: |
-        Fr Collins Okafor welcomes you to a contemporary Catholic experience
-        each Saturday and Sunday, as well as to masses scheduled on weekdays.
-        Everyone is welcome in our community, in the spirit of worship,
-        service, and evangelization.
+  -
+    color: white
+    background: red
+    patch: |
+      **Welcome**
+    text: |
+      Fr Collins Okafor welcomes you to a contemporary Catholic experience
+      each Saturday and Sunday, as well as to masses scheduled on weekdays.
+      Everyone is welcome in our community, in the spirit of worship,
+      service, and evangelization.
 
-        The mission of our parish is to seek *Christ* in all things and to give
-        glory to *God*. Our faith-filled community, under the inspiration and
-        guidance of the *Holy&nbsp;Spirit*, strives to offer nourishment as a
-        joyful family gathered around the Eucharist.
+      The mission of our parish is to seek *Christ* in all things and to give
+      glory to *God*. Our faith-filled community, under the inspiration and
+      guidance of the *Holy&nbsp;Spirit*, strives to offer nourishment as a
+      joyful family gathered around the Eucharist.
 
-    -
-      color: white
-      background: green
-      patch: |
-        **St James**
+  -
+    color: white
+    background: green
+    patch: |
+      **St James**
 
-        the Great
-      text: |
-        The centre of our parish is St&nbsp;James the&nbsp;Great Church,
-        [located in MacTier,&nbsp;Ontario](https://goo.gl/maps/UH2kHye9WgG2),
-        in the heart of Georgan Bay region.
-        This more-than-100-year-old church has stood as a pillar in the
-        community, not only for our Catholic family but also the community at
-        large.
+      the Great
+    text: |
+      The centre of our parish is St&nbsp;James the&nbsp;Great Church,
+      [located in MacTier,&nbsp;Ontario](https://goo.gl/maps/UH2kHye9WgG2),
+      in the heart of Georgan Bay region.
+      This more-than-100-year-old church has stood as a pillar in the
+      community, not only for our Catholic family but also the community at
+      large.
 
-        St James serves our area throughout the year, with Sunday mass held
-        each weekend, along with weekday masses on select days.
-        Please see mass schedule in the Bulletin.
+      St James serves our area throughout the year, with Sunday mass held
+      each weekend, along with weekday masses on select days.
+      Please see mass schedule in the Bulletin.
 
-    -
-      color: white
-      background: blue
-      patch: |
-        **St Anne&apos;s**
+  -
+    color: white
+    background: blue
+    patch: |
+      **St Anne&apos;s**
 
-        Mission
-      text: |
-        Built on Whiteside Road/Fenne's Point by the shoreline of beautiful
-        Lake Muskoka, St&nbsp;Anne&apos;s is a Mission Church within our
-        parish,
-        [located outside Bala and Port Carling,&nbsp;Ontario](https://goo.gl/maps/ARRuSdhUYqu).
-        This small, quaint church nestled in the woods stands not only as a
-        reminder to our Christian heritage, but of the timelessness of
-        God&apos;s presence even in our contemporary lives.
+      Mission
+    text: |
+      Built on Whiteside Road/Fenne's Point by the shoreline of beautiful
+      Lake Muskoka, St&nbsp;Anne&apos;s is a Mission Church within our
+      parish,
+      [located outside Bala and Port Carling,&nbsp;Ontario](https://goo.gl/maps/ARRuSdhUYqu).
+      This small, quaint church nestled in the woods stands not only as a
+      reminder to our Christian heritage, but of the timelessness of
+      God&apos;s presence even in our contemporary lives.
 
-        Mass is celebrated year-round.
-        Please see mass schedule in the Bulletin.
+      Mass is celebrated year-round.
+      Please see mass schedule in the Bulletin.
