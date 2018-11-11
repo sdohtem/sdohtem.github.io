@@ -31,9 +31,9 @@ div.index-schedule-event {
 
 span.index-schedule-title {
   padding: 0.1rem 0.4rem;
-  background-color: #f6f6f6;
-  font-weight: 400;
-  color: #999;
+  background-color: #f3f3f3;
+  font-weight: 300;
+  color: #666;
 }
 
 span.index-schedule-subtitle { display: none; }
@@ -60,7 +60,7 @@ span.index-schedule-time {
   span.index-schedule-subtitle {
     display: inline;
     margin-left: 0.25rem;
-    font-size: 0.85rem;
+    font-size: 0.85rem; font-weight: 400;
     color: #333;
   }
 }
