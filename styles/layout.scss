@@ -109,37 +109,47 @@ div.markdown td { font-weight: 300; }
 
 #banner {
   position: relative;
-  border-bottom: 2px solid #eee;
+  // border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #066;
+  border-top: 1px solid #066;
   padding: 1rem 0;
   text-align: center;
-  color: #333;
+  background-image: linear-gradient(-45deg, #099, #066);
+  background-color: teal;
+  color: white;
 }
 
-div.banner-rcc { font-weight: 400; font-size: 0.75rem; color: #666; }
+div.banner-rcc {
+  font-weight: 300; font-size: 0.75rem;
+  color: rgba(255,255,255,0.8);
+}
 
 div.banner-church { position: relative; top: -0.25rem; }
 
 span.banner-church-name {
-  font-weight: 600; font-size: 1.5rem; letter-spacing: -0.1rem;
-  text-shadow: -2px 2px 2px #ccc;
+  font-weight: 400; font-size: 1.5rem; letter-spacing: -0.1rem;
+  text-shadow: -1px 1px 3px rgba(255,255,255,0.5);
 }
 
 span.banner-church-appellation {
-  font-weight: 400; font-size: 1.25rem; letter-spacing: -0.1rem;
-  color: #666; text-shadow: -2px 2px 2px #ccc;
+  font-weight: 300; font-size: 1.25rem; letter-spacing: -0.1rem;
+  color: rgba(255,255,255,0.9);
+  text-shadow: -1px 1px 2px rgba(255,255,255,0.5);
 }
 
 span.banner-and {
   position: relative; top: -0.05rem;
   padding: 0 0.2rem;
-  font-weight: 400; font-size: 0.65rem; letter-spacing: -0.05rem;
-  color: #999;
+  font-weight: 300; font-size: 0.65rem; letter-spacing: -0.05rem;
+  color: rgba(255,255,255,0.7);
+  // color: #999;
 }
 
 div.banner-muskoka {
   position: relative; top: -0.25rem;
-  font-weight: 400; font-size: 0.75rem;
-  color: #666;
+  font-weight: 300; font-size: 0.75rem;
+  color: rgba(255,255,255,0.8);
+  // color: #666;
 }
 
 @media screen and (min-width: 35.5rem) {
@@ -195,10 +205,9 @@ div.banner-muskoka {
   cursor: default;
 }
 
+#navbar-internal > a:first-of-type { font-weight: 400; color: teal; }
 #navbar-internal > a:last-of-type { padding-right: 0; }
 #navbar-internal > a:hover { color: skyblue; }
-
-#navbar-internal > a.navbar-internal-current { color: #333; }
 
 #navbar-external {
   padding: 0.5rem 5% 0 5%;
