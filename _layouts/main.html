@@ -80,12 +80,13 @@
   <div class="pure-g">
     <div id="navbar" class="pure-u-1 pure-u-md-1-4 pure-u-lg-1-5 pure-u-xl-1-6">
       <div id="navbar-internal">
-        {% for item in navbar.internal %}
-        <a target="_blank" href="{{ item.link | relative_url }}">{{ item.title }}</a>
+        {% for item in navbar.primary %}
+        {% capture link_first_char %}{{ item.link | slice: 0 }}{% endcapture %}
+        <a {% if link_first_char != '#' %}target="_blank" {% endif %}href="{{ item.link | relative_url }}">{{ item.title }}</a>
         {% endfor %}
       </div>
       <div id="navbar-external">
-        {% for item in navbar.external %}
+        {% for item in navbar.secondary %}
         <a target="_blank" class="navbar-item-external" href="{{ item.link }}">{{ item.title }}</a>
         {% endfor %}
       </div>

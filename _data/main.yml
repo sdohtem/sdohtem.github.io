@@ -20,28 +20,29 @@ welcome:
     the&nbsp;Eucharist. **Everyone&nbsp;is&nbsp;welcome.**
 
 navbar:
-  internal:
+  primary:
     -
       title: Latest Bulletin
-      mnemonic: bulletin
       link: /bulletin.pdf
     -
-      title: Contact us
-      mnemonic: contacts
-      link: >
-        #contact
+      title: Saint of the Day
+      link: https://www.catholic.org/saints/sofd.php
     -
-      title: St&nbsp;James&nbsp;the&nbsp;Great <span>Map</span>
-      mnemonic: stjames
+      title: Daily Reading
+      link: https://www.catholic.org/bible/daily_reading/
+    -
+      title: St James the Great Map
       link: https://goo.gl/maps/UH2kHye9WgG2
     -
-      title: St&nbsp;Anne&apos;s&nbsp;Mission <span>Map</span>
-      mnemonic: stannes
+      title: St Anne&apos;s Mission Map
       link: https://goo.gl/maps/ARRuSdhUYqu
     -
-      title: Donate&nbsp;at Canada&nbsp;Helps
+      title: Donate at Canada Helps
       link: https://www.canadahelps.org/en/charities/848623575RR0022-saint-james-the-great/
-  external:
+    -
+      title: Contact Us
+      link: "#contact"
+  secondary:
     -
       title: Peterborough Diocese
       link: https://www.peterboroughdiocese.org/en/index.aspx

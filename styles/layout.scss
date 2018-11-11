@@ -189,19 +189,16 @@ div.banner-muskoka {
 
 #navbar-internal > a {
   padding-right: 0.5rem;
-  font-weight: 400; font-size: 0.9rem;
+  font-weight: 300; font-size: 0.9rem;
   text-decoration: none; white-space: nowrap;
   color: #333;
   cursor: default;
 }
 
-#navbar-internal > a:first-of-type { color: #060; }
 #navbar-internal > a:last-of-type { padding-right: 0; }
 #navbar-internal > a:hover { color: skyblue; }
 
 #navbar-internal > a.navbar-internal-current { color: #333; }
-
-#navbar-internal > a > span { display: none; }
 
 #navbar-external {
   padding: 0.5rem 5% 0 5%;
@@ -212,10 +209,9 @@ div.banner-muskoka {
 #navbar-external > a {
   padding-right: 1rem;
   font-weight: 300; font-size: 0.9rem;
-  white-space: nowrap;
-  text-decoration: none;
+  text-decoration: none; white-space: nowrap;
+  color: #999;
   cursor: default;
-  color: #666;
 }
 
 #navbar-external > a:last-of-type { padding-right: 0; }
@@ -239,8 +235,6 @@ div.banner-muskoka {
   }
 
   #navbar-internal > a:last-of-type { padding-bottom: 0; }
-
-  #navbar-internal > a > span { display: block; }
 
   #navbar-external {
     margin-top: 0.5rem; padding: 0.5rem 10% 0 10%;
