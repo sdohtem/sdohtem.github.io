@@ -13,13 +13,12 @@
 styles_path:           /styles/
 scripts_path:          /scripts/
 images_path:           /images/
-slideshow_images_path: /images/slideshow/
 
 
 
 # Build
 
-# url: https://stpeterspeterborough.ca
+#url:
 #baseurl:
 
 timezone: America/Toronto
