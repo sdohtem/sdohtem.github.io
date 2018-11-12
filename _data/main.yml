@@ -31,17 +31,17 @@ navbar:
       title: Daily Reading
       link: https://www.catholic.org/bible/daily_reading/
     -
-      title: St James on the Map
+      title: St James Map
       link: https://goo.gl/maps/UH2kHye9WgG2
     -
-      title: St Anne&apos;s on the Map
+      title: St Anne&apos;s Map
       link: https://goo.gl/maps/ARRuSdhUYqu
-    -
-      title: Donate
-      link: https://www.canadahelps.org/en/charities/848623575RR0022-saint-james-the-great/
     -
       title: Contact Us
       link: "#contact"
+    -
+      title: Donate
+      link: https://www.canadahelps.org/en/charities/848623575RR0022-saint-james-the-great/
   secondary:
     -
       title: Peterborough Diocese
