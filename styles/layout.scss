@@ -3,7 +3,7 @@
 
 /***
  ***   Derek Coulter <sdohtem [at] gmail.com>
- ***   November 2019
+ ***   November 2018
  ***/
 
 
@@ -85,7 +85,7 @@ div.markdown td { font-weight: 300; }
 
 {% if jekyll.environment == "development" %}
 
-/* TEMPORARY DEVICE WIDTH INDICATOR */
+/* DEVICE WIDTH INDICATOR */
 
 #width-indicator {
   position: fixed; width: 30px; height: 10px; top: 0; right: 0;
